@@ -133,12 +133,12 @@ body {
 
 .feature-card-long {
 margin: auto; 
-width: 210%;
 background: var(--bg-secondary);
 border-radius: 12px;
 padding: 2rem;
 transition: 0.3s ease;
 cursor: pointer;
+width: 210%;
 }
 .feature-card-long:hover {
 transform: translateY(-10px);
