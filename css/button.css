@@ -86,6 +86,17 @@
   height: 220px;
   opacity: 1;
 }
+
+/* icon */
+.icon-small-white {
+  height: 14px;
+  color: #fff;
+}
+.icon-github-green {
+  height: 15px;
+  color: #adff2f;
+}
+
 /* //////原采用的组件，现以丢弃///////
 
 <div class="feature-card">

@@ -144,7 +144,7 @@ body {
 }
 
 .introduce-card-title {
-    font-size: 45px;
+    font-size: 50px;
     margin-left: 40%;
 }
 
@@ -242,4 +242,12 @@ body {
 .card-conmeet-head {
     width: 40px;
     border-radius: 30px;
+}
+
+/* 海报 */
+.card-poster {
+    margin: auto;
+    width: 97%;
+    border-radius: 1.2rem;
+    box-shadow: 10px 20px 40px rgba(236, 236, 236, 0.1);
 }

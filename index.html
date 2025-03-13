@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RTLauncher | 相伴同行</title>
-    <link rel="icon" href="image/rtl_white.png" type="image/x-icon">
+    <link rel="icon" href="image/logo.svg" type="image/x-icon">
     <!-- 第三方 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -16,7 +16,7 @@
 <body>
     <!-- 动态导航 -->
     <nav class="navbar">
-        <a href="#home" class="nav-link"><strong> RTLauncher </strong></a>
+        <a href="#home" class="nav-link"><strong> <img src="image/logo.svg" class="icon-small-white" alt="RTLauncher"> RTLauncher </strong></a>
         <a href="#download" class="nav-link" onclick="github()">Open-GtHub</a>
     </nav>
 
@@ -30,7 +30,7 @@
                 d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
             ></path>
             </svg>
-            <span class="text">GitHub</span>
+            <span class="text"> <img src="image/icon/github.svg" class="icon-github-green" alt="GitHub"> GitHub</span>
             <span class="circle"></span>
             <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -38,9 +38,15 @@
             ></path>
             </svg>
         </button>
-  
-  
+    </section>
 
+    <!-- 海报卡片组 -->
+    <section class="introduce-card">
+        <br>
+        <h1 class="introduce-card-title"><strong style="color: blueviolet;">项目</strong>进行中</h1>
+        <div class="card-grid">
+            <img class="card-poster" src="image/RTLauncher.png" alt="海报">
+        </div>
     </section>
 
     <!-- 功能卡片组 -->
@@ -159,8 +165,16 @@
 
             <!-- that add card -->
             <div class="feature-card" >
-                <img src="image/team/User.png" class="card-conmeet-head" alt="User">
-                <p class="card-conmeet-text"> 我特别期待这个 RTLauncher 启动器！它令我感到惊叹不已！他们的团队非常的在意用户，用心制作好的产品！强烈推荐!!!🤩🤩🤩 <br> <br> 界面简洁明了，操作也非常流畅，即使是新手也能快速上手！🥰最让我惊喜的是它的兼容性和稳定性，无论是加载模组还是切换版本，都几乎没有遇到卡顿或崩溃的情况！😮 启动速度也很快，节省了不少等待时间。另外，自动更新功能非常贴心，让我总能第一时间体验到最新的游戏内容🤓。总的来说，这是一款非常实用且高效的启动器，强烈推荐给所有 Minecraft 玩家！🥰🥰🥰</p>
+                <img src="image/team/team_webPG.jpg" class="card-conmeet-head" alt="User">
+                <p class="card-conmeet-text"> 
+                    RTLauncher Minecraft-第三方启动器，不仅仅是一个简单的游戏启动工具，更是通往无限可能的钥匙。它拥有简洁直观的界面，即使是新手也能轻松上手,满足你对 Minecraft 的一切想象!😎😎😎
+                    <br>  · Mod/资源包一键安装： 内置丰富的模组和资源包库，只需点击即可轻松安装，无需繁琐操作，即刻体验我的世界的无限拓展。
+                    <br>  · 独特的资源管理系统： 轻松管理你的游戏存档，随时随地轻松管理，继续你的冒险旅程。
+                    <br>  · 特制独特的联机功能： 轻松创建房间，邀请好友加入，共同探索、建造、冒险，体验多人游戏的乐趣。
+                    <br>  · 个性化设置： 自定义你的第一无二版启动器！打造属于你的专属我的世界启动器。
+                    <br> RTLauncher 我的世界启动器，不仅仅是一个工具，更是你开启我的世界冒险的伙伴。它将为你带来更便捷、更丰富、更个性化的游戏体验，让你尽情探索这个充满无限可能的方块世界。🥰🥰🥰
+`                   <br> <br><strong style="color: blueviolet;" onclick="github()">#立即了解</strong> RTLauncher 我的世界启动器，开启你的冒险之旅吧！
+                </p>
             </div>
         </div>
     </section>
@@ -217,12 +231,6 @@
                         <p>项目成员</p>
                 </div>
                 </div><div class="swiper-slide">
-                    <div class="team-card">
-                        <img src="image/team/team_dove.jpg" class="member-avatar" alt="项目成员">
-                        <h3>dove</h3>
-                        <p>项目成员</p>
-                    </div>
-                </div><div class="swiper-slide">
                         <div class="team-card">
                         <img src="image/team/team_inteside.jpg" class="member-avatar" alt="项目成员">
                         <h3>inteside</h3>
@@ -244,7 +252,7 @@
     <!-- 结尾  -->
     <section class="introduce-card">
         <br>
-        <h1 class="introduce-card-title">看更多<strong style="color: blueviolet;">咨询</strong></h1>
+        <h1 class="introduce-card-title">寻更多<strong style="color: blueviolet;">咨询</strong></h1>
         
         <button class="animated-button" onclick="github()" style="margin: auto; margin-top: 20px;">
             <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
@@ -252,7 +260,7 @@
                 d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
             ></path>
             </svg>
-            <span class="text">Go The GitHub</span>
+            <span class="text"> <img src="image/icon/github.svg" class="icon-github-green" alt="GitHub"> The GitHub</span>
             <span class="circle"></span>
             <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
             <path
