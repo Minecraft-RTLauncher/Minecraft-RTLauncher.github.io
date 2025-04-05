@@ -144,9 +144,15 @@ width: 210%;
 transform: translateY(-10px);
 box-shadow: 0 15px 30px rgba(255,255,255,0.1);
 }
-@media only screen and (max-width: 420px) {
+
+/*Phone 端自适应500px*/
+@media only screen and (max-width: 500px) {
 .feature-card-long {
     width:100%;
+}
+.introduce-card-title {
+    font-size: 40px;
+    margin-left: 40%;
 }
 }
 /* 动态分隔线 */
