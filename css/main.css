@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background: url('https://source.unsplash.com/random/1920x1080?minecraft') no-repeat center/cover fixed;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+
+/* 导航栏固定方案 */
+.navbar {
+    padding: 1rem 5%;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.75);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-placeholder {
+    height: 64px; /* 初始高度 */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+
+.slogan-container {
+    height: 50px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.slogan-scroll {
+    animation: scrollText 9s infinite;
+    position: absolute;
+    width: 100%;
+
+}
+
+.slogan-scroll p {
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI';
+    border-radius: 10px;
+    color: #fff;
+    background-color: #3498db;
+    transition-duration: 0.35s;
+}
+.slogan-scroll p:hover {
+    transform: translateX(10px);
+}
+
+@keyframes scrollText {
+    0%, 20% { transform: translateY(0); }
+    25%, 45% { transform: translateY(-50px); }
+    50%, 70% { transform: translateY(-100px); }
+    75%, 95% { transform: translateY(-150px); }
+    100% { transform: translateY(0); }
+}
+
+.cta-button {
+    padding: 1rem 2.5rem;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px rgba(52, 152, 219, 0.3);
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.section {
+    padding: 4rem 5%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    margin: 6rem 5% 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+
+.hero-card-text-top {
+    width: 16rem;
+    border-bottom: 10px solid #ffd000;
+    transform: translateY(-18.6rem);
+    transition-duration: 0.5s;
+    position: relative; /* 绝对定位 */
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: rgba(247, 247, 247, 0.95);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgba(121, 121, 121, 0.5);
+    transition-duration: 0.3s;
+}
+.project-card:hover {
+    transform: translateY(-3px);
+    background: rgba(236, 236, 236, 0.95);
+}
+.project-card p {
+    font-family: 'Segoe UI';
+    color: #141414;
+    font-size: 1rem;
+}
+.project-card img {
+    color: #2c3e50;
+    width: 2rem;
+}
+
+
+.end-card-left {
+    float: left;
+    margin-left: 2rem;
+    transition-duration: 0.35s;
+}
+.end-card-right {
+    float: right;
+    margin-right: 1rem;
+    transition-duration: 0.35s;
+}
+.end-button {
+    padding: 10px;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    border: 1px solid #f7f7f7;
+    transition-duration: 0.3s;
+}
+.end-button a {
+    color: #2c3e50;
+    font-family: 'Segoe UI';
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.end-button:hover {
+    background-color: #f7f7f7;
+    box-shadow: 3px 3px 5px rgba(155, 155, 155, 0.5);
+}
+
+@media (min-width: 501px) {
+    .end-card-left {
+        margin-left: 6rem;
+        margin-bottom: 1rem;
+    }
+    .end-card-right {
+        margin-right: 5rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.8rem;
+        position: static;
+    }
+    .hero {
+        margin-top: 0 !important;
+        padding: 2rem 5% !important;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .slogan-container {
+        height: 50px;
+    }
+    .slogan-scroll p {
+        font-size: 1rem;
+    }
+    .section {
+        margin: 2rem 3%;
+        padding: 2rem;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* 主内容区避让 */
+.hero {
+    padding: 120px 5% 4rem; /* 顶部避让导航栏 */
+    height: 100vh;
+    background: linear-gradient(#00a2ff9f,1%, #fff);
+}
+.hero-card {
+    margin-left: 20px;
+}
+
+.section {
+    padding: 4rem 5%;
+    margin: 2rem 5%;
+    background: rgba(255, 255, 255, 0.85);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .navbar {
+        height: 56px;
+        padding: 0.8rem 5% !important;
+        position: fixed !important; /* 强制固定 */
+    }
+
+    .navbar-placeholder {
+        height: 56px; /* 同步导航栏高度 */
+    }
+
+    .hero {
+        padding-top: 80px !important; /* 56px导航栏 + 24px间距 */
+    }
+
+    .section {
+        margin: 2rem 3%;
+        padding: 2rem;
+    }
+}

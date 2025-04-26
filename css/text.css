@@ -1,0 +1,110 @@
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 5rem;
+    animation: fadeInUp 1s ease;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+h1 p {
+    font-size: 3rem;
+    font-weight: 700;
+    width: 15rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.end-text {
+    font-family: 'Segoe UI';
+    color: #5d5d5e;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.end-text-strong {
+    font-family: 'Segoe UI';
+    color: #2c3e50;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#h1-welcome {
+    font-size: 6rem;
+    font-weight: 100;
+    transition-duration: 0.3s;
+}
+.h2-text {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 501px) {
+    #h1-welcome {
+        font-size: 9rem;
+    }
+}
+
+
+.li-title {
+    font-size: 1.5rem;
+}
+.li-button {
+    padding: 5px;
+    margin-left: 1rem;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.li-button a {
+    color: #2c3e50;
+    font-family: 'Segoe UI';
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.end-card-left {
+    float: left;
+    margin-left: 2rem;
+    transition-duration: 0.35s;
+}
+.end-card-right {
+    float: right;
+    margin-right: 1rem;
+    transition-duration: 0.35s;
+}
+.end-button {
+    padding: 10px;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    border: 1px solid #f7f7f7;
+    transition-duration: 0.3s;
+}
+.end-button a {
+    color: #2c3e50;
+    font-family: 'Segoe UI';
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.end-button:hover {
+    background-color: #f7f7f7;
+    box-shadow: 3px 3px 5px rgba(155, 155, 155, 0.5);
+}
+
+@media (min-width: 501px) {
+    .end-card-left {
+        margin-left: 6rem;
+        margin-bottom: 1rem;
+    }
+    .end-card-right {
+        margin-right: 5rem;
+    }
+}

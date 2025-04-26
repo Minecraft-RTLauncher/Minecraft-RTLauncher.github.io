@@ -128,4 +128,9 @@
     top: 60px;
     animation: twinkling 2s infinite;
   }
-  
+
+  @media (min-width: 501px) {
+    .section-banner {
+      display: none;
+    }
+}

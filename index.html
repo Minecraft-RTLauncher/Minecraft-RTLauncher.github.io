@@ -1,336 +1,216 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <!-- 很感谢你能够浏览本站，但你要是把我们写的网站偷走的话我们会很难过的QWQ -->
+    <!-- Welcome The RTLauncher's web-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RTLauncher | 相伴同行</title>
+    <title>RTLauncher - 相伴同行</title>
     <link rel="icon" href="image/logo.svg" type="image/x-icon">
-    <!-- 第三方 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- 引入 -->
-    <link rel="stylesheet" href="css/index.css">
+    <!-- Add CSS -->
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/early.css">
+    <link rel="stylesheet" href="css/text.css">
 </head>
 <body>
-    <!-- 动态导航 -->
+    <!-- 导航栏占位符 -->
+    <div class="navbar-placeholder"></div>
+    
+    <!-- 固定导航栏 -->
     <nav class="navbar">
-        <a href="#home" class="nav-link"><strong> <img src="image/logo.svg" class="icon-small-white" alt="RTLauncher"> RTLauncher </strong></a>
-        <a href="#download" class="nav-link" onclick="github()">Open-GtHub</a>
+        <a href="#" class="logo"> RTLauncher</a>
     </nav>
 
-    <!-- 首屏区域 -->
     <section class="hero">
-        <h1>RTLuncher</h1>
-
-        <button class="animated-button" onclick="github()">
-            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-            ></path>
-            </svg>
-            <span class="text"> <img src="image/icon/github.svg" class="icon-github-green" alt="GitHub"> GitHub</span>
-            <span class="circle"></span>
-            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-            ></path>
-            </svg>
-        </button>
-    </section>
-
-    <!-- 海报卡片组 -->
-    <section class="introduce-card">
-        <br>
-        <h1 class="introduce-card-title"><strong style="color: blueviolet;">项目</strong>进行中</h1>
-        <div class="card-grid">
-            <img class="card-poster" src="image/RTLauncher.png" alt="海报">
-        </div>
-    </section>
-
-    <!-- 功能卡片组 -->
-    <section class="introduce-card">
-        <br>
-        <h1 class="introduce-card-title">我们的<strong style="color: blueviolet;">优势</strong></h1>
-        <div class="card-grid">
-            <!-- that add card -->
-
-            <div class="feature-card" >
-                <h1>超 <strong style="color: blueviolet;"> 1000 +</strong> 关注</h1>
+        <div class="hero-card">
+            <h1 id="h1-welcome">Welcome <p> RTLuncher. </p> </h1>
+            <h2 style="font-weight: 100;">The <b style="font-weight: 600;">RTL Team's</b> <b style="font-weight: 600; color: #3498db;">dream</b></h2>
+            <div class="slogan-container">
+                <div class="slogan-scroll">
+                    <p style="font-size: 20px; font-weight: 600;">更流畅</p>
+                    <p style="font-size: 20px; font-weight: 600;">更雅观</p>
+                    <p style="font-size: 20px; font-weight: 600;">更迅速</p>
+                    <p style="font-size: 20px; font-weight: 600;">🐕</p>
+                </div>
             </div>
-            <div class="feature-card" >
-                <h1>简约美的 <strong style="color: blueviolet;"> 造型</strong> </h1>
-            </div>
-            <div class="feature-card" >
-                <h1>优秀的 <strong style="color: blueviolet;"> 优化</strong> </h1>
-            </div>
-            <div class="feature-card" >
-                <h1>急速 <strong style="color: blueviolet;"> 好友联机 </strong> 功能 </h1>
-            </div>
-            <div class="feature-card-long">
-                <h1>点击了解 <strong style="color: blueviolet;"> <a onclick="github()">具体详情+</a> </strong>  </h1>
-            </div>
-        </div>
-    </section>
-
-    
-    <!--评论 -->
-    <section class="introduce-card">
-        <br>
-        <h1 class="introduce-card-title">我们的<strong style="color: blueviolet;">介绍</strong></h1>
-        
-        <div class="card-grid">
-
-            <!-- Early -->
-            <div class="section-banner">
-                <div id="star-1">
-                  <div class="curved-corner-star">
-                    <div id="curved-corner-bottomright"></div>
-                    <div id="curved-corner-bottomleft"></div>
-                  </div>
-                  <div class="curved-corner-star">
-                    <div id="curved-corner-topright"></div>
-                    <div id="curved-corner-topleft"></div>
-                  </div>
-                </div>
-  
-                <div id="star-2">
-                  <div class="curved-corner-star">
-                    <div id="curved-corner-bottomright"></div>
-                    <div id="curved-corner-bottomleft"></div>
-                  </div>
-                  <div class="curved-corner-star">
-                    <div id="curved-corner-topright"></div>
-                    <div id="curved-corner-topleft"></div>
-                  </div>
-                </div>
-  
-                <div id="star-3">
-                  <div class="curved-corner-star">
-                    <div id="curved-corner-bottomright"></div>
-                    <div id="curved-corner-bottomleft"></div>
-                  </div>
-                  <div class="curved-corner-star">
-                    <div id="curved-corner-topright"></div>
-                    <div id="curved-corner-topleft"></div>
-                  </div>
-                </div>
-  
-                <div id="star-4">
-                  <div class="curved-corner-star">
-                    <div id="curved-corner-bottomright"></div>
-                    <div id="curved-corner-bottomleft"></div>
-                  </div>
-                  <div class="curved-corner-star">
-                    <div id="curved-corner-topright"></div>
-                    <div id="curved-corner-topleft"></div>
-                  </div>
-                </div>
-  
-                <div id="star-5">
-                  <div class="curved-corner-star">
-                    <div id="curved-corner-bottomright"></div>
-                    <div id="curved-corner-bottomleft"></div>
-                  </div>
-                  <div class="curved-corner-star">
-                    <div id="curved-corner-topright"></div>
-                    <div id="curved-corner-topleft"></div>
-                  </div>
-                </div>
-  
-                <div id="star-6">
-                  <div class="curved-corner-star">
-                    <div id="curved-corner-bottomright"></div>
-                    <div id="curved-corner-bottomleft"></div>
-                  </div>
-                  <div class="curved-corner-star">
-                    <div id="curved-corner-topright"></div>
-                    <div id="curved-corner-topleft"></div>
-                  </div>
-                </div>
-  
-                <div id="star-7">
-                  <div class="curved-corner-star">
-                    <div id="curved-corner-bottomright"></div>
-                    <div id="curved-corner-bottomleft"></div>
-                  </div>
-                  <div class="curved-corner-star">
-                    <div id="curved-corner-topright"></div>
-                    <div id="curved-corner-topleft"></div>
-                  </div>
-                </div>
-              </div>
-            <!-- early -->
-
-            <!-- that add card -->
-            <div class="feature-card" >
-                <img src="image/team/team_webPG.jpg" class="card-conmeet-head" alt="User">
-                <p class="card-conmeet-text"> 
-                    RTLauncher Minecraft-第三方启动器，不仅仅是一个简单的游戏启动工具，更是通往无限可能的钥匙。它拥有简洁直观的界面，即使是新手也能轻松上手,满足你对 Minecraft 的一切想象!😎😎😎
-                    <br>  · Mod/资源包一键安装： 内置丰富的模组和资源包库，只需点击即可轻松安装，无需繁琐操作，即刻体验我的世界的无限拓展。
-                    <br>  · 独特的资源管理系统： 轻松管理你的游戏存档，随时随地轻松管理，继续你的冒险旅程。
-                    <br>  · 特制独特的联机功能： 轻松创建房间，邀请好友加入，共同探索、建造、冒险，体验多人游戏的乐趣。
-                    <br>  · 个性化设置： 自定义你的第一无二版启动器！打造属于你的专属我的世界启动器。
-                    <br> RTLauncher 我的世界启动器，不仅仅是一个工具，更是你开启我的世界冒险的伙伴。它将为你带来更便捷、更丰富、更个性化的游戏体验，让你尽情探索这个充满无限可能的方块世界。🥰🥰🥰
-`                   <br> <br><strong style="color: blueviolet;" onclick="github()">#立即了解</strong> RTLauncher 我的世界启动器，开启你的冒险之旅吧！
-                </p>
-            </div>
-        </div>
-    </section>
-    
-
-    <!-- 团队轮播 -->
-    <section class="team-section">
-        <br>
-        <h1 class="introduce-card-title">#RTL <strong style="color: blueviolet;"> Team</strong></h1>
-
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <img src="image/team/team_Lutouna.png" class="member-avatar" alt="技术总监">
-                        <h3>Lutouna</h3>
-                        <p>首席开发者</p>
-                    </div>
-                </div>
-                <!-- add team members here -->
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <img src="image/team/team_4rc.jpg" class="member-avatar" alt="项目管理员">
-                        <h3>4rcadia</h3>
-                        <p>项目管理员</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <img src="image/team/team_jry.jpg" class="member-avatar" alt="项目管理员">
-                        <h3>JRY</h3>
-                        <p>项目管理员</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <img src="image/team/team_webPG.jpg" class="member-avatar" alt="项目管理员">
-                        <h3>webPG</h3>
-                        <p>项目管理员</p>
-                    </div>
-                </div>
-                <!-- team peoples -->
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <img src="image/team/team_yizi.jpg" class="member-avatar" alt="项目成员">
-                        <h3>yizhi9jiyan9</h3>
-                        <p>项目成员</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <img src="image/team/team_dove.jpg" class="member-avatar" alt="项目成员">
-                        <h3>dove</h3>
-                        <p>项目成员</p>
-                </div>
-                </div><div class="swiper-slide">
-                        <div class="team-card">
-                        <img src="image/team/team_inteside.jpg" class="member-avatar" alt="项目成员">
-                        <h3>inteside</h3>
-                        <p>项目成员</p>
-                    </div>
-                </div><div class="swiper-slide">
-                    <div class="team-card">
-                    <img src="image/team/User.png" class="member-avatar" alt="项目成员">
-                    <h3>更多伙伴</h3>
-                    <p>···</p>
-                    </div>
-                
-                <!-- stop add team members -->
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
-    <!-- 结尾  -->
-    <section class="introduce-card">
-        <br>
-        <h1 class="introduce-card-title">寻更多<strong style="color: blueviolet;">咨询</strong></h1>
-        
-        <button class="animated-button" onclick="github()" style="margin: auto; margin-top: 20px;">
-            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-            ></path>
-            </svg>
-            <span class="text"> <img src="image/icon/github.svg" class="icon-github-green" alt="GitHub"> The GitHub</span>
-            <span class="circle"></span>
-            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-            ></path>
-            </svg>
-        </button>
-    </section>
-
-    <!-- Home -->
-    <section class="introduce-card">
-        <div style="width: 100%; height: 100px;">
-        </div>
-    </section>
-
-
-    <!-- Swiper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
-    <script>
-        // 初始化团队轮播
-        const swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            loop: true,
-            coverflowEffect: {
-                rotate: 20,
-                stretch: 0,
-                depth: 200,
-                modifier: 1,
-                slideShadows: true,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-        });
-
-        // 导航栏滚动动画
-        window.addEventListener("scroll", () => {
-            const nav = document.querySelector(".navbar");
-            nav.style.background = window.scrollY > 50 
-                ? "rgba(10,10,10,0.98)" 
-                : "rgba(10,10,10,0.95)";
-        });
-
-        // 卡片交互动画
-        document.querySelectorAll(".feature-card").forEach(card => {
-            card.addEventListener("mousemove", (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                card.style.transform = `
-                    perspective(1000px)
-                    rotateX(${(y - rect.height/2) / 15}deg)
-                    rotateY(${-(x - rect.width/2) / 15}deg)
-                    translateY(-10px)
-                `;
-            });
             
-            card.addEventListener("mouseleave", () => {
-                card.style.transform = "translateY(-10px)";
-            });
-        });
-    </script>
-    <script src="js/index.js"></script>
+            <button class="animated-button" onclick="github()">
+                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg"> <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path> </svg>
+                <span class="text"> <img src="image/icon/github.svg" class="icon-github-green" alt="GitHub"> GitHub</span>
+                <span class="circle"></span>
+                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg"> <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path> </svg>
+            </button>
+  
+            <p class="hero-card-text-top"> &nbsp </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2><b style="color: cornflowerblue;"> 我们 </b> 是谁 </h2>
+        <p class="h2-text"> <b style="font-weight: 700; color: #2a3b4d">RTL Team</b> 是由 Minecraft 爱好者们自组的一个启动器高质制作团队</p>
+        
+        <!-- Early -->
+        <br>
+        <div class="section-banner">
+            <div id="star-1">
+              <div class="curved-corner-star">
+                <div id="curved-corner-bottomright"></div>
+                <div id="curved-corner-bottomleft"></div>
+              </div>
+              <div class="curved-corner-star">
+                <div id="curved-corner-topright"></div>
+                <div id="curved-corner-topleft"></div>
+              </div>
+            </div>
+
+            <div id="star-2">
+              <div class="curved-corner-star">
+                <div id="curved-corner-bottomright"></div>
+                <div id="curved-corner-bottomleft"></div>
+              </div>
+              <div class="curved-corner-star">
+                <div id="curved-corner-topright"></div>
+                <div id="curved-corner-topleft"></div>
+              </div>
+            </div>
+
+            <div id="star-3">
+              <div class="curved-corner-star">
+                <div id="curved-corner-bottomright"></div>
+                <div id="curved-corner-bottomleft"></div>
+              </div>
+              <div class="curved-corner-star">
+                <div id="curved-corner-topright"></div>
+                <div id="curved-corner-topleft"></div>
+              </div>
+            </div>
+
+            <div id="star-4">
+              <div class="curved-corner-star">
+                <div id="curved-corner-bottomright"></div>
+                <div id="curved-corner-bottomleft"></div>
+              </div>
+              <div class="curved-corner-star">
+                <div id="curved-corner-topright"></div>
+                <div id="curved-corner-topleft"></div>
+              </div>
+            </div>
+
+            <div id="star-5">
+              <div class="curved-corner-star">
+                <div id="curved-corner-bottomright"></div>
+                <div id="curved-corner-bottomleft"></div>
+              </div>
+              <div class="curved-corner-star">
+                <div id="curved-corner-topright"></div>
+                <div id="curved-corner-topleft"></div>
+              </div>
+            </div>
+
+            <div id="star-6">
+              <div class="curved-corner-star">
+                <div id="curved-corner-bottomright"></div>
+                <div id="curved-corner-bottomleft"></div>
+              </div>
+              <div class="curved-corner-star">
+                <div id="curved-corner-topright"></div>
+                <div id="curved-corner-topleft"></div>
+              </div>
+            </div>
+
+            <div id="star-7">
+              <div class="curved-corner-star">
+                <div id="curved-corner-bottomright"></div>
+                <div id="curved-corner-bottomleft"></div>
+              </div>
+              <div class="curved-corner-star">
+                <div id="curved-corner-topright"></div>
+                <div id="curved-corner-topleft"></div>
+              </div>
+            </div>
+          </div>
+        <!-- early -->
+    </section>
+
+    <section class="section">
+        <h2>我们的 <b style="color: cornflowerblue;"> 优势 </b></h2>
+        <div class="project-grid">
+            <img style="margin: auto; width: 100%; border-radius: 12px;" src="image/RTLauncherPicture.png" alt="Photo">
+
+            <div class="project-card">
+                <img src="image/icon/macbook-line.png" alt="icon">
+                <h3>RTLuncher</h3>
+                <p>下一代功能强大，界面雅观的 Minecraft 启动器</p>
+            </div>
+            <div class="project-card">
+                <img src="image/icon/file-transfer-line.png" alt="icon">
+                <h3>Rust</h3>
+                <p>基于 Rust 后端，更加安全高效</p>
+            </div>
+            <div class="project-card">
+                <img src="image/icon/team-line.png" alt="icon">
+                <h3>P2P Terrsce</h3>
+                <p>跨平台联机模块，支持 P2P 和中继技术</p>
+            </div>
+            <div class="project-card">
+                <img src="image/icon/download-cloud-2-line.png" alt="icon">
+                <h3>Faster Resource</h3>
+                <p>更快速的 CDN 下载资源中心</p>
+            </div>
+            <div class="project-card">
+                <img src="image/icon/checkbox-multiple-blank-line.png" alt="icon">
+                <h3>More Center</h3>
+                <p>支持 Windows，macos，linux 三端平台，无限可能</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Team BY <b style="color: cornflowerblue;"> RTL </b></h2>
+        <p style="color: #b8b8b8;">我们是一群热爱 Minecraft 的玩家，我们的 Flag 是将最好的软件与服务呈现给大家</p>
+        
+        <br>
+        <h2 class="li-title">服务</h2>
+        <button class="li-button">
+            <img style="width: 15px;" src="image/icon/macbook-line.png" alt="icon">
+            <a href="#"> RTLuncher </a>
+        </button>
+        
+        <br>
+        <h2 class="li-title">联系</h2>
+        <button class="li-button">
+            <img style="width: 15px;" src="image/icon/github-line.png" alt="icon">
+            <a href="https://github.com/Minecraft-RTLauncher/RTLauncher"> GitHub </a>
+        </button>
+        <br>
+        <button class="li-button">
+            <img style="width: 15px;" src="image/icon/qq-line.png" alt="icon">
+            <a href="https://qm.qq.com/q/5Epg6x2VvW"> QQ群 - 1 </a>
+        </button>
+        <br>
+        <button class="li-button">
+            <img style="width: 15px;" src="image/icon/qq-line.png" alt="icon">
+            <a href="https://qm.qq.com/q/kkafcvEk7e"> QQ群 - 2 </a>
+        </button>
+        
+    </section>
+
+    <div class="end-card">
+        <div class="end-card-left">
+            <h4 class="end-text-strong"> Build with RTL Team.</h4>
+            <h4 class="end-text">由 <b style="color: #247cff;"> webPG & RTL-Team</b> 构建，如有侵权请联系</h4>
+            <h4 class="end-text-strong"> © RTL Team All rights reserved</h4>
+        </div>
+        <div class="end-card-right">
+            <button class="end-button">
+                <img style="width: 15px;" src="image/icon/github-line.png" alt="icon">
+                <a href="https://github.com/Minecraft-RTLauncher/RTLauncher">关于 RTLuncher</a>
+            </button>
+        </div>
+    </div>
+
+    <!-- Add JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
