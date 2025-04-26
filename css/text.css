@@ -47,7 +47,7 @@ h3 {
 
 @media (min-width: 501px) {
     #h1-welcome {
-        font-size: 9rem;
+        font-size: 8rem;
     }
 }
 
@@ -68,43 +68,3 @@ h3 {
     text-decoration: none;
 }
 
-.end-card-left {
-    float: left;
-    margin-left: 2rem;
-    transition-duration: 0.35s;
-}
-.end-card-right {
-    float: right;
-    margin-right: 1rem;
-    transition-duration: 0.35s;
-}
-.end-button {
-    padding: 10px;
-    margin-left: 1rem;
-    margin-bottom: 1.5rem;
-    background-color: #fff;
-    border: 1px solid #f7f7f7;
-    transition-duration: 0.3s;
-}
-.end-button a {
-    color: #2c3e50;
-    font-family: 'Segoe UI';
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 10px;
-    text-decoration: none;
-}
-.end-button:hover {
-    background-color: #f7f7f7;
-    box-shadow: 3px 3px 5px rgba(155, 155, 155, 0.5);
-}
-
-@media (min-width: 501px) {
-    .end-card-left {
-        margin-left: 6rem;
-        margin-bottom: 1rem;
-    }
-    .end-card-right {
-        margin-right: 5rem;
-    }
-}
