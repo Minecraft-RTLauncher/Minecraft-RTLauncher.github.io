@@ -24,25 +24,7 @@ body::before {
     z-index: -1;
 }
 
-/* 导航栏固定方案 */
-.navbar {
-    padding: 1rem 5%;
-    height: 64px;
-    background: rgba(255, 255, 255, 0.75);
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
 
-.navbar-placeholder {
-    height: 64px; /* 初始高度 */
-}
 
 .logo {
     font-size: 1.5rem;
@@ -167,7 +149,7 @@ body::before {
     margin-left: 1rem;
     margin-bottom: 1.5rem;
     background-color: #fff;
-    border: 1px solid #f7f7f7;
+    border: 0px;
     transition-duration: 0.3s;
 }
 .end-button a {
@@ -195,13 +177,9 @@ body::before {
 
 
 @media (max-width: 768px) {
-    .navbar {
-        padding: 0.8rem;
-        position: static;
-    }
     .hero {
         margin-top: 0 !important;
-        padding: 2rem 5% !important;
+        padding-top: 80px !important; /* 56px导航栏 + 24px间距 */
     }
     h1 {
         font-size: 2rem;
@@ -252,26 +230,4 @@ body::before {
     backdrop-filter: blur(8px);
     border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
-
-/* 移动端适配 */
-@media (max-width: 768px) {
-    .navbar {
-        height: 56px;
-        padding: 0.8rem 5% !important;
-        position: fixed !important; /* 强制固定 */
-    }
-
-    .navbar-placeholder {
-        height: 56px; /* 同步导航栏高度 */
-    }
-
-    .hero {
-        padding-top: 80px !important; /* 56px导航栏 + 24px间距 */
-    }
-
-    .section {
-        margin: 2rem 3%;
-        padding: 2rem;
-    }
 }

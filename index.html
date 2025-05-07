@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <!-- 很感谢你能够浏览本站，但你要是把我们写的网站偷走的话我们会很难过的QWQ -->
-    <!-- Welcome The RTLauncher's web-->
+    <!-- Welcome The RTLauncher's web--><
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RTLauncher - 相伴同行</title>
@@ -12,15 +12,37 @@
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/early.css">
     <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/TopMeun.css">
+    <!-- Add JS -->
+    <script src="js/main.js"></script>
+    <script src="js/TopMeun.js"></script>
 </head>
 <body>
-    <!-- 导航栏占位符 -->
-    <div class="navbar-placeholder"></div>
     
-    <!-- 固定导航栏 -->
-    <nav class="navbar">
-        <a href="#" class="logo"> RTLauncher</a>
-    </nav>
+    <!-- TopMeun -->
+      <div class="top-meun">
+          <nav class="top-bar">
+              <a href="#" class="top-logo">RTLauncher</a>
+              <div class="menu-btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+          </nav>
+    
+          <div class="menu-panel">
+              <ul class="menu-list">
+                  <li class="meun-list-li">
+                      <!--
+                      <img class="meun-list-img" src="image/icon/github.svg" alt="icon">
+                      -->
+                      <a onclick="github()">GitHub</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+    <!-- 动态导航 -->
 
     <section class="hero">
         <div class="hero-card">
@@ -186,12 +208,12 @@
         <br>
         <button class="li-button">
             <img style="width: 15px;" src="image/icon/qq-line.png" alt="icon">
-            <a href="https://qm.qq.com/q/5Epg6x2VvW"> QQ群 - 1 </a>
+            <a href="https://qm.qq.com/q/kkafcvEk7e"> QQ群 - 2 </a>
         </button>
         <br>
         <button class="li-button">
             <img style="width: 15px;" src="image/icon/qq-line.png" alt="icon">
-            <a href="https://qm.qq.com/q/kkafcvEk7e"> QQ群 - 2 </a>
+            <a href="https://qm.qq.com/q/lYjrCKpoze"> QQ群 - 3 </a>
         </button>
         
     </section>
@@ -199,6 +221,7 @@
     <div class="end-card">
         <div class="end-card-left">
             <h4 class="end-text-strong"> Build with RTL Team.</h4>
+            <!--                ### 如预更改著作信息，更改为 'RTL Team & RTL 社区成员' 或者 建议'webPG & RTL 社区成员' -->
             <h4 class="end-text">由 <b style="color: #247cff;"> webPG & RTL-Team</b> 构建，如有侵权请联系</h4>
             <h4 class="end-text-strong"> © RTL Team All rights reserved</h4>
         </div>
@@ -210,7 +233,5 @@
         </div>
     </div>
 
-    <!-- Add JavaScript -->
-    <script src="js/main.js"></script>
 </body>
 </html>

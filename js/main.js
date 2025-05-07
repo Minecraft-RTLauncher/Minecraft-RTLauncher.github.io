@@ -28,3 +28,28 @@ document.addEventListener('DOMContentLoaded', () => {
 document.querySelector('.cta-button').addEventListener('click', () => {
     alert('下载功能即将开放！');
 });
+
+//汉堡 Meun
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const fullscreenMenu = document.querySelector('.fullscreen-menu');
+    const closeBtn = document.querySelector('.close-btn');
+
+    hamburger.addEventListener('click', () => {
+        fullscreenMenu.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    closeBtn.addEventListener('click', () => {
+        fullscreenMenu.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+
+    // 点击菜单外部关闭
+    fullscreenMenu.addEventListener('click', (e) => {
+        if (e.target === fullscreenMenu) {
+            fullscreenMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+});
