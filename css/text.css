@@ -45,9 +45,33 @@ h3 {
     font-size: 1.5rem;
 }
 
-@media (min-width: 501px) {
+/* 大于等于 501px -1080p -1k */
+@media (min-width: 501px) and (max-width: 2558px) {
     #h1-welcome {
+        font-size: calc(85vw * 0.145);
+    }
+}
+/* 大于等于 2559 -2k*/
+@media (min-width: 2559px) {
+    #h1-welcome {
+        font-size: calc(85vw * 0.15);
+    }
+    h1 p {
         font-size: 8rem;
+        font-weight: 700;
+        width: 15rem;
+    }
+    h2 {
+        font-size: 6rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .hero-card-text-top {
+        width: 45rem;
+        border-bottom: 20px solid #ffd000;
+        transform: translateY(-25.6rem);
+        transition-duration: 0.5s;
+        position: relative; /* 绝对定位 */
     }
 }
 
