@@ -51,8 +51,8 @@ h3 {
         font-size: calc(85vw * 0.145);
     }
 }
-/* 大于等于 2559 -2k*/
-@media (min-width: 2559px) {
+/* 大于等于 1080 -2k..*/
+@media (min-width: 1580px) {
     #h1-welcome {
         font-size: calc(85vw * 0.15);
     }
